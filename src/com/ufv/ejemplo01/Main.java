@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Perritos perro = new Perritos();
         Persona p = new Persona();
         Scanner sc = new Scanner(System.in);
         System.out.println("Escribe tu nombre: ");
@@ -14,9 +15,11 @@ public class Main {
         p.setDnisinletra(sc.nextInt() );
         System.out.println("Escribe tu edad: ");
         p.setEdad(sc.nextInt() );
-
+        System.out.println("Escribe la raza del perro ");
+        perro.setRaza(sc.nextLine() );
         System.out.print("Buenos días: " + p.getNombre());
         System.out.print(" " + p.getApellidos() + " con dni: " + p.getDnisinletra());
-        System.out.print(" y edad: " + p.getEdad() );
+        System.out.println(" y edad: " + p.getEdad() );
+        System.out.println(" Y tu perro se llama: "+ perro.getRaza());
     }
 }
