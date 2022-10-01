@@ -1,7 +1,7 @@
 package com.ufv.ejemplo01;
 
 import java.util.Scanner;
-
+//VERSION 2.0
 public class Main {
     public static void main(String[] args) {
         Perritos perro = new Perritos();
