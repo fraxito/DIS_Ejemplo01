@@ -7,6 +7,8 @@ public class Main {
         Perritos perro = new Perritos();
         Persona p = new Persona();
         Scanner sc = new Scanner(System.in);
+        System.out.println("Escribe la raza del perro ");
+        perro.setRaza(sc.nextLine() );
         System.out.println("Escribe tu nombre: ");
         p.setNombre( sc.nextLine() );
         System.out.println("Escribe tus apellidos: ");
@@ -15,11 +17,10 @@ public class Main {
         p.setDnisinletra(sc.nextInt() );
         System.out.println("Escribe tu edad: ");
         p.setEdad(sc.nextInt() );
-        System.out.println("Escribe la raza del perro ");
-        perro.setRaza(sc.nextLine() );
+            //Mostramos los cambios
         System.out.print("Buenos días: " + p.getNombre());
         System.out.print(" " + p.getApellidos() + " con dni: " + p.getDnisinletra());
         System.out.println(" y edad: " + p.getEdad() );
-        System.out.println(" Y tu perro se llama: "+ perro.getRaza());
+        System.out.println(" Y tu perro es de raza: "+ perro.getRaza());
     }
 }
